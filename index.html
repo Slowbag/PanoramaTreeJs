@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Panorama</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <style>
+            html{
+                margin: 0;
+                padding: 0;      
+                text-align: center;
+            }
+            body {
+                font-size: 18px;
+                line-height: 1.5em;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                display: inline-block;
+                overflow-x: hidden;
+            }
+            a{
+                color: #528CE0;
+            }
+            #demo{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                cursor: move;
+                cursor: grab;
+                cursor: -moz-grab;
+                cursor: -webkit-grab;
+            }
+            #demo:active { 
+                cursor: grabbing;
+                cursor: -moz-grabbing;
+                cursor: -webkit-grabbing;
+            }
+            #log{
+                position: absolute;
+                background: #fff;
+                padding: 20px;
+                bottom: 20px;
+                left: 20px;
+                width: 150px;
+                font: normal 12px/18px Monospace, Arial, Helvetical, sans-serif;
+                text-align: left;
+                border: 3px double #ddd;
+            }
+            #description{
+                display: inline-block;
+                width: 100%;
+                max-width: 600px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demo">
+            <div id="log"></div>
+        </div>        
+        <!-- <div id="description">
+        </div> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="libs/threejs/build/three.min.js"></script>        
+        <script src="js/main.js"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src=""></script>
+    </body>
+</html>
